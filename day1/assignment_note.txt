@@ -1,0 +1,44 @@
+Assignment
+..........................
+
+Features Of Python
+---------------------------
+• Interpreted Language
+	 Python is an interpreted language, meaning that the code is executed line by line, which simplifies debugging
+	 and development.
+	 
+• Object-Oriented Language
+	Python is also an objectoriented language since its beginning. It allows us to develop applications using an
+	Object-Oriented approach. 
+	Major principles of object-oriented programming system are given below.
+	 Class
+	 Object
+	 Method
+	 Inheritance
+	 Polymorphism
+	 Data Abstraction
+	 Encapsulation
+
+• Open-Source Language
+	 Python is free to use and distribute. Its source code is publicly available,
+	 which encourages community contributions and allows anyone to modify and improve the language.
+
+• Strong Support for Integration
+	 Python integrates well with other languages and tools, which makes it suitable for various applications such as
+	 web services, enterprise applications, and more. It also supports integration with C, C++, and Java.
+	 
+• Learn Standard Library
+	 Python comes with a comprehensive standard library that provides many built-in modules and functions for common tasks
+	 like file handling, network programming, and data manipulation, which simplifies coding.
+	
+• Wide Range of Libraries and Frameworks
+	 Python has a vast ecosystem of libraries and frameworks for various purposes, such as web development (Django, Flask),
+	 data analysis (Pandas, NumPy), machine learning (TensorFlow, scikit-learn), and more,
+	 making it versatile for many applications.
+
+•  Readable and Maintainable Code
+	 The emphasis on readability in Python’s design philosophy helps developers
+	 write clean and maintainable code. The use of whitespace and indentation enforces a clean coding structure.
+	 
+	 
+----------------------------------------------------------------------------------------------------------------------------------------
