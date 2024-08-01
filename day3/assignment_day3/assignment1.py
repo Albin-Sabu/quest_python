@@ -16,8 +16,6 @@ swapped_numbers = swap_elements(numbers)
 print("List after swapping consecutive elements:", swapped_numbers)
 
 '''
-Algorithm
------------
 step 1
 Enter the length of the list and create an empty list
 
