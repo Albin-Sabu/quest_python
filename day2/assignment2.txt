@@ -1,0 +1,53 @@
+Assignment Day 2
+------------------------
+1) What is the alternative implementation of function overloading in Python?
+
+Ans) Python does not support traditional function overloading as seen in languages like C++ or Java.
+     However, you can achieve similar functionality using default arguments, variable-length arguments,
+	 or by checking types within the function.
+	 
+2) Why there is no implicit type casting in Python ?
+
+Ans) Python emphasizes explicitness and simplicity. Implicit type casting can lead to unexpected behavior and bugs
+     that are hard to trace. By avoiding implicit type casting, Python ensures that types are handled explicitly,
+	 making the code more readable and reducing the chances of type-related errors.
+	 
+3) Why there is no ++ and -- (increment/decrement) operators in Python?
+
+Ans) Python does not have ++ and -- operators to avoid complexity and encourage a simpler way of handling operations.
+     Instead, you can use += and -= for incrementing and decrementing values, which fits Python’s design philosophy of
+	 explicitness and simplicity
+	 
+4) What is the difference between @static method and @class method?
+
+Ans) @staticmethod: A static method does not take any reference to the instance or class (self or cls).
+     It behaves like a regular function but belongs to the class's namespace.
+	 @classmethod: A class method takes a reference to the class (cls) as its first parameter.
+	 It can modify the class state that applies across all instances of the class.
+	 
+5) What is the difference between __new__() and __init__() ?
+
+Ans) __new__(): It is a static method responsible for creating a new instance of a class. It is called before __init__().
+     __new__() must return an instance of the class.
+
+     __init__(): It is an instance method used to initialize the newly created object.
+	 It is called after __new__() and sets up the object’s initial state.
+	 
+6) What is the syntax to use switch-case in Python. Given an example.
+
+Ans) Unlike every other programming language we have used before, Python does not have a switch or case statement.
+     To get around this fact, we use dictionary mapping.
+	 Eg:
+		
+		switcher = {
+        1: "Option 1",
+        2: "Option 2",
+        3: "Option 3"
+		}
+		argument = int(input("Enter the option"))
+		option = switcher.get(argument, "Invalid option")
+		
+7) Can the key within a dictionary be a composite value like a list or tuple, or should it be an atomic value such as number or string?
+
+Ans) In Python, dictionary keys must be immutable types. Therefore, tuples can be used as dictionary keys, but lists cannot.
+     Lists are mutable and thus cannot be used as dictionary keys. Numbers and String can be used as dictionary keys.
