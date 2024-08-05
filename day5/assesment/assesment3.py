@@ -11,8 +11,5 @@ def decending_order_sorting(test_cases):
             a = int(list[i])
             print(a, end=" ")
 
-
-
-
 test_cases = int(input())
 decending_order_sorting(test_cases)

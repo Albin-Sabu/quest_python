@@ -1,4 +1,4 @@
-# Problem Name:  Maximum element in stack problem
+# Albin Sabu Assesment Problem Name:  Maximum element in stack problem
 
 
 def query_function(number_of_queries,stack):

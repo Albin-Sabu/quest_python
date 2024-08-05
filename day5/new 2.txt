@@ -1,0 +1,152 @@
+Day 5
+=================================
+
+1D array
+
+# Program to create 1D Array (List) and find biggest and smallest numbers in it.
+ 
+n = int(input('Enter size of the Array: '))
+ 
+array = []
+print(f'Enter {n} numbers of the Array')
+for i in range(n):
+    array.append(int(input()))
+ 
+print('Array = ', array)
+small_num = array[0]
+big_num = array[0]
+ 
+for i in range(1, n):
+    if array[i] < small_num:
+        small_num = array[i]
+    if array[i] > big_num:
+        big_num = array[i]
+print(f'Biggest number in Array is {big_num}')
+print(f'Smallest number in Array is {small_num}')
+
+......................................................................................
+
+# Program to create 2D Array, that is, a Matrix(using List) and add it to another Matrix and print the sum Matrix.
+ 
+rows = int(input('Enter number of rows of the Matrix: '))
+columns = int(input('Enter number of columns of the Matrix: '))
+ 
+matrix1 = []
+for i in range(rows):
+    print(f'Enter {columns} numbers of Row-{i+1}')
+    row_numbers = [] # List that stores numbers of a specific row
+    for j in range(columns): # To read numbers of a row
+        row_numbers.append(int(input()))
+    matrix1.append(row_numbers)
+ 
+for row in matrix1:
+    for number in row:
+        print('%3s'%(number), end='')
+    print()
+	
+=============================================================================================
+[10:36 AM] Nithin Neelakanta Rao
+# Program to create 2D Array, that is, a Matrix(using List) and add it to another Matrix and print the sum Matrix.
+ 
+rows = int(input('Enter number of rows of the Matrix1: '))
+columns = int(input('Enter number of columns of the Matrix1: '))
+ 
+matrix1 = []
+for i in range(rows):
+    print(f'Enter {columns} numbers of Row-{i+1}')
+    row_numbers = [] # List that stores numbers of a specific row
+    for j in range(columns): # To read numbers of a row
+        row_numbers.append(int(input()))
+    matrix1.append(row_numbers)
+ 
+rows = int(input('Enter number of rows of the Matrix2: '))
+columns = int(input('Enter number of columns of the Matrix2: '))
+ 
+matrix2 = []
+for i in range(rows):
+    print(f'Enter {columns} numbers of Row-{i+1}')
+    row_numbers = [] # List that stores numbers of a specific row
+    for j in range(columns): # To read numbers of a row
+        row_numbers.append(int(input()))
+    matrix2.append(row_numbers)
+ 
+print('Matrix1 is:')
+for row in matrix1:
+    for number in row:
+        print('%3s'%(number), end='')
+    print()
+ 
+print('Matrix2 is:')
+for row in matrix2:
+    for number in row:
+        print('%3s'%(number), end='')
+    print()
+ 
+sum_matrix = []
+for i in range(len(matrix1)):
+    row_numbers = []
+    for j in range(len(matrix1[0])):
+        row_numbers.append(matrix1[i][j] + matrix2[i][j])
+    sum_matrix.append(row_numbers)
+ 
+print('Sum Matrix is:')
+for row in sum_matrix:
+    for number in row:
+        print('%3s'%(number), end='')
+    print()
+	
+===============================================================================================
+# Program to create a 3D Array
+'''
+1st read elements of a row
+add these rows into the Matrix
+Now read such N matrices and add them all to the 3D Array
+'''
+ 
+matrices = int(input('Enter the number of Matrices in 3D array: '))
+rows = int(input('Enter number of rows of each Matrix: '))
+columns = int(input('Enter number of columns of each row: '))
+ 
+array_3d = []
+for i in range(matrices):
+    matrix = []
+    print(f'Enter elements of the Matrix-{i+1}')
+    for j in range(rows):
+        row = []
+        for k in range(columns):
+            row.append(int(input()))
+        matrix.append(row)
+    array_3d.append(matrix)
+ 
+print(array_3d)
+ 
+=====================================================================================================
+
+reflect word is present or not
+
+
+original_str = input('Enter the original string: ')
+rotated_str = input('Enter the rotated string: ')
+ 
+temp_str = rotated_str * 2
+if temp_str.find(original_str) != -1:
+    print(f'{rotated_str} is rotated string of {original_str}')
+else:
+    print(f'{rotated_str} is Not rotated string of {original_str}')
+ 
+==============================================================================================
+
+import math
+N = int(input("The no:of customers:"))
+bill_amounts = []
+count_of_perfect_squares = 0
+print(f'Enter the bill amounts of {N} customers :')
+for i in range(N):
+    amount = int(input())
+    bill_amounts.append(amount)
+print(f'Customer bill amounts are: {bill_amounts}')
+for i in range(N):
+    root = math.isqrt(bill_amounts[i])
+    if(root * root == bill_amounts[i]):
+        count_of_perfect_squares += 1
+print(f'Count of perfect squares of {N} bills is {count_of_perfect_squares}')

@@ -1,7 +1,7 @@
 # Find the nth term of the series 1 2 2 3 3 5 5 7 8 11 13 13
-import math
+import math,pdb
 
-
+pdb.set_trace()
 def last_fibo_term(n):   # Function for get the last fibo term
     thrid_number = 0
     first_number  = 1
