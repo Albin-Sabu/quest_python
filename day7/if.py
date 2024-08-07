@@ -35,13 +35,13 @@ elif age < 45 and gender.lower() == "f" and residence.lower() == "l" and occupat
     print("Fastrack/nyka cupon added, thank you for shopping")
 
 elif age > 60 and gender.lower() == "m" and residence.lower() == "l" and occupation.lower() == "s":
-    print("Grocery discount and fastrack/titan coupon added book discount, , thank you for shopping")
+    print("Grocery discount and fastrack/titan coupon added book discount also added, , thank you for shopping")
 
 elif age < 60 and gender.lower() == "m" and residence.lower() == "l" and occupation.lower() == "w":
     print("Fastrack/Titan coupon added")
 
 elif age < 60 and gender.lower() == "m" and residence.lower() == "l" and occupation.lower() == "s":
-    print("Fastrack/Titan coupon added,  booking ,B thank you for shopping")
+    print("Fastrack/Titan coupon added,  book dicount also added, thank you for shopping")
 
         
 else:
