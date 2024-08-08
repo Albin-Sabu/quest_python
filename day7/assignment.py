@@ -1,5 +1,3 @@
-# Main assignment:
-# E commerce discount program.
 #########################################################################
 age = int(input("Enter age: "))
 gender = input("Enter gender: \nM. Male\nF. Female\n")
