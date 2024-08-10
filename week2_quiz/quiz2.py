@@ -20,3 +20,5 @@ try:
     shutil.copyfile('dir1/file1.txt',"dir2/file2.txt")
 except:
     print("No file found in source")
+except :
+    print("File with same name already exists")
