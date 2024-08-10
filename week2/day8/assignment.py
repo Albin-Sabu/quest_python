@@ -18,6 +18,8 @@ arts = int(input("Enter your arts mark: "))
 marks =[maths, english, arts] # making all the marks as a list
 preference = input("Enter your preferd subjects using comma (like maths, arts, english): ").upper()
 prefer_list = preference.split(",")
+
+#################################################
 try:
     if len(prefer_list) <= 3:
         pass
