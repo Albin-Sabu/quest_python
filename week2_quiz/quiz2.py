@@ -11,10 +11,12 @@ print(os.getcwd())
 os.mkdir("dir1")
 file=open("dir1/file1.txt", 'x')
 file.close()
-os.mkdir("dir2")
+try:
+   os.mkdir("dir2") 
+except :
+    print("File with same name already exists")   
+
 try:
     shutil.copyfile('dir1/file1.txt',"dir2/file2.txt")
-except FileNotFoundError:
+except:
     print("No file found in source")
-except :
-    print("File with same name already exists")
